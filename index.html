@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./tachyons.min.css">
+    <link rel="stylesheet" href="tachyons.min.css">
     <link rel="stylesheet" href="q.css">
     <title></title>
   </head>
@@ -19,6 +19,20 @@
           <div class="website">www.alghurairintl.com</div>
         </div>
       </div>
+      <div class="card-back">
+        <div class="text_block">
+          <div class="full_name">خالد عبدالله الغرير</div>
+          <div class="designation">الرئيس</div>
+          <div class="underline"></div>
+          <div class="company">الغرير و سولاري الشرق الاوسط لتجارة الحافلات ش.ذ.م.م.</div>
+          <div class="website">www.alghurairintl.com</div>
+        </div>
+      </div>
     </div>
   </body>
+  <script>
+    document.querySelector('.card').addEventListener('click', function() {
+      this.classList.toggle('is-flipped');
+    });
+  </script>
 </html>
